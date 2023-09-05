@@ -1,110 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    
-    
-</head>
-<body>
-    <header class="row">
-        <h1 class="col-12">Clinica UNAHUR</h1>
-
-    <nav class="row navPrincipal">
-        <h2 class="col-12 ingresarUsuario">Ingerese su usuario</h2>
-        <form id="formularioDeIngreso">
-                <div class="col-3"><a href="index.html" target="_blank"><img src="cruzRoja.png" alt="Cruz Roja"></a></div>
-                <input type="text" id="usuario" placeholder="Usuario" required class="col-3 ">
-                <input type="password" id="contraseña" placeholder="Contraseña" required class="col-3 ">
-                <button class="col-3 boton" placeholder="Iniciar" id="button" type="submit">Ingresar</button>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Primer HTML</title>
+        </head>
+        <body>
+            <p> 
+                <h1>Dentro de h1 va el titulo de la pagina, hay varios h, desde el 2 hasta el 6, subtitulos</h1>
                 
-         </form>
-    </nav>
-    </header>
+                <p>p es para los parrafos <br>
+                img se usa para las imagenes <br> <img src="https://picsum.photos/200" alt="Imagen aleatoria de picsum"><br>
+                la etiqueta a se usa para los links, por ej cuando queres poner el link de origen de una imagen <a href="https://picsum.photos/" target="_blank">apretame para ir a picsum</a>
+                
+                <br>
+                
+                <p>
+                    <pre> 
+                        <strong>
+                                las imagenes tambien pueden ser puestas dentro 
+                                de "a" para utilizarlas para ir hacia otra pagina
+                        </strong> 
+                    </pre>
+                </p>
+                
+                <a href="https://www.dc.com/" target="_blank">
+                    <img src="imagenes/COIEHC-008-009.jpg" alt="crisis en tierras infinitas banda" height="600px" title="Crisis en Tierras Infinitas" id="crsisisEnTierrasInfinitas" class="tierrasInfinitas">
+                </a>
+                <br>
+                
+                <p>tambien dentro de "a" se pueden poner direcciones de mail para que te mande de manera automatica hacia el mail incluso agregandole el asunto. tambien telefonos, a su vez podemos usar "a" para que nos lleve a zonas dentro de la misma pagina, de la siguiente manera <a href="#elGuanteleteDelInfinito2">apretame</a>. y si queremos ir mas lejos podemos incluso poner el tag para que nos lleve hacia otros sectores dentro de la pagina, por ejemplo si quiero ir a clase4 <a href="clase4.html" target="_blank">apretame para ir a la clase 4</a></p><br>
+                
+                <a href="mailto:gonzalodiaspro2@gmail.com?Subject=Hola Bebe" target="_blank">
+                    <img src="imagenes/Infinity Gauntlet - Deluxe Edition-003.jpg" alt="el thanos loco" height="600px" title="el guanteloco del thanos" id="elGuanteleteDelInfinito" class="guanteleteLoco"><br>
+                
+                    <a href="tel:+541134158422" target="_blank">
+                    <img src="imagenes/Infinity Gauntlet - Deluxe Edition-003.jpg" alt="el thanos loco" height="600px" title="el guanteloco del thanos" id="elGuanteleteDelInfinito2" class="guanteleteLoco">
 
-    <main>
-        <section>
-            <article class="row informacionClinica">
-                <figure class="col-6">
-                    <img src="imagenDoctor.jpg" alt="Caricatura Doctor">
-                </figure>
-                <div class="col-6">
-                    <h3 class="col-12">Cartilla Medica</h3>
-                    <p class="col-12">Más de 500 profesionales atendiendo a más de 100.000 personas, brindando atención personalizada a cada uno de ellos.</p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article class="row busqueda">
-                <div class="col-12"><h3 >¿Qué tipo de atención estás buscando?</h3></div>
-                <form>
-                    <div class="col-2"></div>
-                    <div class="col-2 primerEleccion"><input type="radio"  name="primerEleccion"><br>
-                    <label for="primerEleccion">Pediatría</label></div>
-                    
-                    <div class="col-2 segundaEleccion"><input type="radio"  name="segundaEleccion"><br>
-                    <label for="segundaEleccion">Guardia</label></div>
-                    
-                    <div class="col-2 terceraEleccion"><input type="radio"  name="tercerEleccion"><br>
-                    <label for="tercerEleccion">Traumatología</label></div>
-                    
-                    <div class="col-2 cuartaEleccion"><input type="radio"  name="cuartaeleccion"><br>
-                    <label for="cuartaeleccion">Nutrición</label></div>
-                    <div class="col-2"></div>
 
-                    <div class="col-12 ciudad"><label for="ciudad" class="col-3">Seleccione su ciudad</label><input type="text" placeholder="Ingrese su ciudad" class="col-9"></div>
-                    
-                    <div class="col-12 obraSocial"><label for="obraSocial" class="col-3">Seleccione su obra social</label><input type="text" placeholder="Ingrese su obra ocial" class="col-9"></div>
-                    
-                    <div class="col-12 profesional"><label for="profesional" class="col-3">Seleccione un profesional</label><input type="text" placeholder="Ingrese un profesional" class="col-9"></div>
-                    
-                    <div class="col-12 fecha"><label for="fecha" class="col-3">Seleccione una fecha</label><input type="date"  class="col-9"></div>
-                </form>
-            </article>
-        </section>
-    </main>
 
-    <footer class="row">
-        <p class="col-4 copyrigth">© 2023 Clínica UNAHUR</p>
 
-        <div class="col-4 informacion">
-            <h3>Para más información:</h3>
-            <p><a href="mailto:gonzalodiaspro@gmail.com" target="_blank">Contacto</a></p>
-            <p>Telefóno: 1134158422 ó 1169968422</p>
-        </div>
 
-        <div class="col-4 afiliados">
-            <h3>Con quién trabajamos:</h3>
-            <p>Osde</p>
-            <p>Superville</p>
-        </div>
-    </footer>
-
-</body>
-<script>
-    document.getElementById("formularioDeIngreso").addEventListener("submit", function(event) {
-        event.preventDefault(); 
-
-        var username = document.getElementById('usuario').value;
-        var password = document.getElementById('contraseña').value;
-
-        if (username=== 'mirtita' && password==='123') {
-            var url = "paciente.html?usuario=" + username;
-            window.location.href = url;
-        } 
-        else if(username=== 'house' && password==='123'){
-            var url = "doctor.html?usuario=" + username;
-            window.location.href = url;
-        }
-        else {
-            alert("Credenciales inválidas");
-        }
-    });
-  </script>
-</html>
+                </p>
+            </p>
+        </body>
+    </html>
