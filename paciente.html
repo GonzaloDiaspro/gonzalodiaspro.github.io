@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var username = urlParams.get('usuario');
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (username) {
+            document.getElementById('mensajeBienvenida').textContent = '¡Bienvenido/a ' + username + '!';
+        }
+    });
+</script>
+<body>
+    <header class="row">
+        <nav class="col-12 volverInicio">
+            <a href="index.html ">Página principal</a>
+        </nav>
+        
+        <h1 id="mensajeBienvenida"></h1>
+
+    </header>
+
+    <main>
+        <table  class="table table-hover">
+            
+            <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Especialidad</th>
+              <th>Medico</th>
+              <th>Observaciones</th>
+              <th>Cancelar</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>29/01</td>
+                <td>17:30hs</td>
+                <td>Traumatología</td>
+                <td>Doc. Alejandro Gutierrez</td>
+                <td>Ninguna</td>
+                <td><button class="btn btn-danger">Cancelar</button></td>
+              </tr>
+              <tr>
+                <td>20/03</td>
+                <td>16hs</td>
+                <td>Otorrino</td>
+                <td>Doc. Raúl Medina</td>
+                <td>Ninguna</td>
+                <td><button class="btn btn-danger">Cancelar</button></td>
+              </tr>
+              <tr>
+                <td>16/04</td>
+                <td>8hs</td>
+                <td>Laboratorio</td>
+                <td>Doc. Ailen Senatore</td>
+                <td>Traer frasco de orina y venir con 12hs de ayuno</td>
+                <td><button class="btn btn-danger">Cancelar</button></td>
+              </tr>
+              <tr>
+                <td>2/06</td>
+                <td>14hs</td>
+                <td>Traumatología</td>
+                <td>Doc. Alejandro Gutierrez</td>
+                <td>Traer resonancias de estudios pasados</td>
+                <td><button class="btn btn-danger">Cancelar</button></td>
+              </tr>
+              <tr>
+                <td>4/08</td>
+                <td>10hs</td>
+                <td>Laboratorio</td>
+                <td>Doc. Ailen Senatore</td>
+                <td>Traer resultados de estudios previamente hechos</td>
+                <td><button class="btn btn-danger">Cancelar</button></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="6">Observaciones generales: Ninguna</td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <form action="" class="reservaTurno" id="sacarTurno">
+            <h2 class="col-12">Nueva reserva de turno:</h2>
+            <h3 class="camposReserva">Seleccione la especialidad</h3>
+            <div id="reservaEspecialidad">
+              <label class="radio-inline camposReserva "><input type="radio" name="optradio" required>Pediatria</label>
+              <label class="radio-inline camposReserva "><input type="radio" name="optradio" required>Guardia</label>
+              <label class="radio-inline camposReserva "><input type="radio" name="optradio" required>Traumatología</label>
+              <label class="radio-inline camposReserva "><input type="radio" name="optradio" required>Nutrición</label>
+            </div>
+            
+            <div class="form-group camposReserva" id="reservaEspecialista">
+                <label for="sel1">Seleccione el especialista:</label>
+                <select class="form-control" id="sel1" required>
+                  <option>Alejandro Gutierrez</option>
+                  <option>Ailen Senatore</option>
+                  <option>Raúl Medina</option>
+                </select>
+              </div>
+
+              <div class="form-group camposReserva" id="reservaFechaHorario">
+                <label for="fecha">Seleccione una Fecha</label>
+                <input type="date" class="form-control" id="fecha" required>
+                <label for="horario">Seleccione un horario</label>
+                <input type="time" class="form-control" id="horario" required>
+              </div>
+
+              <div class="form-group camposReserva" id="reservaMail">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+
+              <div class="form-group camposReserva">
+                <label for="Observaciones">Observaciones:</label>
+                <textarea class="form-control" rows="5" id="Observaciones"></textarea>
+              </div>
+
+              <button class="btn btn-success camposReserva" type="submit" id="aceptarTurno" >Enviar</button>
+          </form>
+    </main>
+
+    <footer class="row">
+        <p class="col-4 copyrigth">© 2023 Clínica UNAHUR</p>
+
+        <div class="col-4 informacion">
+            <h3>Para más información:</h3>
+            <p><a href="mailto:gonzalodiaspro@gmail.com" target="_blank">Contacto</a></p>
+            <p>Telefóno: 1134158422 ó 1169968422</p>
+        </div>
+
+        <div class="col-4 afiliados">
+            <h3>Con quién trabajamos:</h3>
+            <p>Osde</p>
+            <p>Superville</p>
+        </div>
+    </footer>
+</body>
+<script>
+        document.getElementById("sacarTurno").addEventListener("submit", function() {
+        event.preventDefault(); 
+
+        let especialidad = document.getElementById('reservaEspecialidad').value;
+        let especialista = document.getElementById('reservaEspecialista').value;
+        let fechaHorario = document.getElementById('reservaFechaHorario').value;
+        let mail = document.getElementById('reservaMail').value;
+        let aceptarTurno = document.getElementById('aceptarTurno').value;
+
+        if (!aceptarTurno) {
+          
+          alert("Turno reservado correctamente");
+          this.submit()
+          return;
+          
+        }        
+        });
+</script>
+</html>
