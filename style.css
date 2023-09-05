@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1.9fr 1.9fr 0.1fr;
+    gap: 60px 60px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "banner banner banner"
+      "menu1 menu2 menu3"
+      "menu4 menu5 menu6"
+      "pieDePagina pieDePagina pieDePagina";
+    background-color: #ddd;     
+
+  }
+  
+  .banner {  
+    display: grid;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-area: banner;
+    background-color: #000;
+  }
+
+  .banner h1{
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+  }
+  
+.menu1 {
+    display: grid;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-area: menu1;
+ }
+  
+.menu2 { 
+    display: grid;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-area: menu2; 
+}
+  
+.menu3 { 
+    display: grid;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-area: menu3; 
+}
+  
+.menu4 { 
+    display: grid;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-area: menu4; 
+}
+  
+.menu5 {
+    display: grid;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-area: menu5; 
+}
+  
+.menu6 { 
+    display: grid;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-area: menu6;
+}
+
+.menu1, .menu2, .menu3, .menu4, .menu5, .menu6{
+    background-color: #bbb;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container ul{
+    list-style-type: none;
+} 
+
+.container h2{
+    text-decoration: underline;
+} 
+
+.pieDePagina {
+    display: grid;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    background-color: #000;
+    grid-area: pieDePagina; 
+}
+
+.pieDePagina p{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
