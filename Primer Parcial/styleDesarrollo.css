@@ -1,0 +1,96 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: #d8cad3c7;
+    text-align: center;
+}
+
+
+#headerPrincipal h1{
+    font-size: 80px;
+    margin: 2px;
+    padding: 6px;
+    display: inline-block;
+}
+
+#headerPrincipal figure img{
+    width: 80vw;
+    
+}
+
+#headerPrincipal ul li{
+    list-style-type: none;
+    text-align: left;
+}
+
+#navPrincipal{
+    text-align: right;
+}
+
+
+span{
+    font-weight: bold;
+    text-decoration: underline double;
+    font-weight: bolder;
+}
+
+
+
+#pelicula figure img{
+    width: 50vw;
+}
+
+#pelicula header h3{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#pelicula p{
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+#personajesPrincipales{
+    text-align: left;
+}
+
+#personajesPrincipales ul{
+    list-style-type: square;
+}
+
+#peliculasSuper{
+    text-align: left;
+}
+
+#peliculasSuper ol{
+    list-style-type: upper-roman;
+}
+
+iframe{
+    width: 40vw;
+    height: 50vh;
+}
+
+
+table{
+    border: 2px solid black;
+}
+
+table caption{
+    border: 2px solid black;
+}
+
+table thead tr th{
+    border: 2px solid black;
+}
+
+table tbody tr td{
+    border: 2px solid black;
+}
+
+table tfoot tr td{
+    border: 2px solid black;
+}
