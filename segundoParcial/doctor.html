@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var username = urlParams.get('usuario');
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (username) {
+            document.getElementById('mensajeBienvenida').textContent = '¡Bienvenido/a ' + username + '!';
+        }
+    });
+</script>
+<body>
+    <header class="row">
+        <nav class="col-12 volverInicio">
+            <a href="index.html ">Página principal</a>
+        </nav>
+        
+        <h1 id="mensajeBienvenida"></h1>
+
+    </header>
+
+    <main>
+        <section>
+            <article class="diasTurnos col-12" id="lunes">
+                <h3 class="">Lunes</h3>
+                <div class="col-4 paciente">
+                    <h4>Paciente Julian Alvarez</h4>
+                    <p>Fecha: 2/7</p>
+                    <p>Hora: 12hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Rodrigo De Paul</h4>
+                    <p>Fecha: 2/7</p>
+                    <p>Hora: 14hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Leandro Paredes</h4>
+                    <p>Fecha: 2/7</p>
+                    <p>Hora: 16hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+            </article>
+            
+            <article class="diasTurnos col-12" id="martes">
+                <h3 class="">Martes</h3>
+                <div class="col-4 paciente">
+                    <h4>Paciente Lionel Scaloni</h4>
+                    <p>Fecha: 3/7</p>
+                    <p>Hora: 12hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Lionel Messi</h4>
+                    <p>Fecha: 3/7</p>
+                    <p>Hora: 14hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Emiliano Martinez</h4>
+                    <p>Fecha: 3/7</p>
+                    <p>Hora: 16hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+            </article>
+            
+            <article class="diasTurnos col-12" id="miercoles">
+                <h3 class="">Miercoles</h3>
+                <div class="col-4 paciente">
+                    <h4>Paciente Cristian Romero</h4>
+                    <p>Fecha: 4/7</p>
+                    <p>Hora: 12hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Nicolas Tagliafico</h4>
+                    <p>Fecha: 4/7</p>
+                    <p>Hora: 14hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Gonzalo Montiel</h4>
+                    <p>Fecha: 4/7</p>
+                    <p>Hora: 16hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+            </article>
+            
+            <article class="diasTurnos col-12" id="jueves">
+                <h3 class="">Jueves</h3>
+                <div class="col-4 paciente">
+                    <h4>Paciente Angel Di Maria</h4>
+                    <p>Fecha: 5/7</p>
+                    <p>Hora: 12hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Nicolas Gonzalez</h4>
+                    <p>Fecha: 5/7</p>
+                    <p>Hora: 14hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Angel Correa</h4>
+                    <p>Fecha: 5/7</p>
+                    <p>Hora: 16hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+            </article>
+            
+            <article class="diasTurnos col-12" id="viernes">
+                <h3 class="">Viernes</h3>
+                <div class="col-4 paciente">
+                    <h4>Paciente Enzo Fernandez</h4>
+                    <p>Fecha: 6/7</p>
+                    <p>Hora: 12hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Paulo Dybala</h4>
+                    <p>Fecha: 6/7</p>
+                    <p>Hora: 14hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+                <div class="col-4 paciente">
+                    <h4>Paciente Nicolas Otamendi</h4>
+                    <p>Fecha: 6/7</p>
+                    <p>Hora: 14hs</p>
+                    <p>Observaciones: Ninguna</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="row col-12">
+        <p class="col-4 copyrigth">© 2023 Clínica UNAHUR</p>
+
+        <div class="col-4 informacion">
+            <h3>Para más información:</h3>
+            <p><a href="mailto:gonzalodiaspro@gmail.com" target="_blank">Contacto</a></p>
+            <p>Telefóno: 1134158422 ó 1169968422</p>
+        </div>
+
+        <div class="col-4 afiliados">
+            <h3>Con quién trabajamos:</h3>
+            <p>Osde</p>
+            <p>Superville</p>
+        </div>
+    </footer>
+</body>
+</html>

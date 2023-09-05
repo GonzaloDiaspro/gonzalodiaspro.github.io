@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <header class="row">
+        <h1 class="col-12">Clinica UNAHUR</h1>
+
+    <nav class="row navPrincipal">
+        <h2 class="col-12 ingresarUsuario">Ingerese su usuario</h2>
+        <form id="formularioDeIngreso">
+                <div class="col-3"><a href="index.html" target="_blank"><img src="cruzRoja.png" alt="Cruz Roja"></a></div>
+                <input type="text" id="usuario" placeholder="Usuario" required class="col-3 ">
+                <input type="password" id="contraseña" placeholder="Contraseña" required class="col-3 ">
+                <button class="col-3 boton" placeholder="Iniciar" id="button" type="submit">Ingresar</button>
+                
+         </form>
+    </nav>
+    </header>
+
+    <main>
+        <section>
+            <article class="row informacionClinica">
+                <figure class="col-6">
+                    <img src="imagenDoctor.jpg" alt="Caricatura Doctor">
+                </figure>
+                <div class="col-6">
+                    <h3 class="col-12">Cartilla Medica</h3>
+                    <p class="col-12">Más de 500 profesionales atendiendo a más de 100.000 personas, brindando atención personalizada a cada uno de ellos.</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="row busqueda">
+                <div class="col-12"><h3 >¿Qué tipo de atención estás buscando?</h3></div>
+                <form>
+                    <div class="col-2"></div>
+                    <div class="col-2 primerEleccion"><input type="radio"  name="primerEleccion"><br>
+                    <label for="primerEleccion">Pediatría</label></div>
+                    
+                    <div class="col-2 segundaEleccion"><input type="radio"  name="segundaEleccion"><br>
+                    <label for="segundaEleccion">Guardia</label></div>
+                    
+                    <div class="col-2 terceraEleccion"><input type="radio"  name="tercerEleccion"><br>
+                    <label for="tercerEleccion">Traumatología</label></div>
+                    
+                    <div class="col-2 cuartaEleccion"><input type="radio"  name="cuartaeleccion"><br>
+                    <label for="cuartaeleccion">Nutrición</label></div>
+                    <div class="col-2"></div>
+
+                    <div class="col-12 ciudad"><label for="ciudad" class="col-3">Seleccione su ciudad</label><input type="text" placeholder="Ingrese su ciudad" class="col-9"></div>
+                    
+                    <div class="col-12 obraSocial"><label for="obraSocial" class="col-3">Seleccione su obra social</label><input type="text" placeholder="Ingrese su obra ocial" class="col-9"></div>
+                    
+                    <div class="col-12 profesional"><label for="profesional" class="col-3">Seleccione un profesional</label><input type="text" placeholder="Ingrese un profesional" class="col-9"></div>
+                    
+                    <div class="col-12 fecha"><label for="fecha" class="col-3">Seleccione una fecha</label><input type="date"  class="col-9"></div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="row">
+        <p class="col-4 copyrigth">© 2023 Clínica UNAHUR</p>
+
+        <div class="col-4 informacion">
+            <h3>Para más información:</h3>
+            <p><a href="mailto:gonzalodiaspro@gmail.com" target="_blank">Contacto</a></p>
+            <p>Telefóno: 1134158422 ó 1169968422</p>
+        </div>
+
+        <div class="col-4 afiliados">
+            <h3>Con quién trabajamos:</h3>
+            <p>Osde</p>
+            <p>Superville</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    document.getElementById("formularioDeIngreso").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        var username = document.getElementById('usuario').value;
+        var password = document.getElementById('contraseña').value;
+
+        if (username=== 'mirtita' && password==='123') {
+            var url = "paciente.html?usuario=" + username;
+            window.location.href = url;
+        } 
+        else if(username=== 'house' && password==='123'){
+            var url = "doctor.html?usuario=" + username;
+            window.location.href = url;
+        }
+        else {
+            alert("Credenciales inválidas");
+        }
+    });
+  </script>
+</html>
